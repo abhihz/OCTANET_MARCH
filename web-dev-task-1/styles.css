@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Sacramento&family=Playfair+Display+SC:wght@700&family=Cinzel+Decorative:wght@700&family=Dancing+Script:wght@700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+.musician-name {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'Cinzel Decorative', serif;
+    letter-spacing: 3px;
+}
+
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.main-content {
+    background-color: black;
+    padding: 40px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.main-content div {
+    margin-bottom: 40px;
+}
+
+iframe {
+    width: 80%;
+    max-width: 560px;
+}
+
+.newsletter form {
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4500;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #ff6347;
+}
+
+button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e63e00;
+}
+
+.video-container {
+    display: flex;
+    gap: 15px; overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+.video-container iframe {
+    width: 320px; 
+    height: 180px; 
+    flex: 0 0 auto; 
+    scroll-snap-align: start;
+    border-radius: 10px; 
+}
+
+.video-container {
+    scrollbar-width: thin;
+    scrollbar-color: #ff4500 black;
+}
